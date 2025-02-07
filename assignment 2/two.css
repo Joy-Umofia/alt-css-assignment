@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+}
+:root{
+ --text-color:#000000;
+ --span-color:#009966;
+ --down-background-color:#666;
+ --top--background-color:#fff;
+ --tag-color:#ffbf00;
+ --tag-border-bottom:#cc9900;
+  --p-font-size:20px;
+ --p-line-height:30px;
+ --h-font-size:32px;
+}
+/* mobile  */
+main{
+  width: 100%;
+  height:auto;
+  background-color:var(--top--background-color) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.top{
+  width:100%;
+  height:auto;
+  border-bottom:8px solid #999999;
+  padding: 1rem;
+}
+.hulk{
+  width:fit-content;
+  margin: 5rem 0rem 2rem 0rem;
+}
+.hulk>p{
+  font-weight:800;
+  font-size:var(--h-font-size) ;
+  line-height: 38.4px;
+  color: var(--text-color);
+}
+.top-text{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top:2rem ;
+}
+.top-text p:nth-child(1), .top-text p:nth-child(2){
+ width: 100%;
+ font-weight:400;
+ font-size: var(--p-font-size);
+ line-height: var(--p-line-height);
+ letter-spacing: -0.5%;
+ color: var(--text-color);
+  span{
+  font-weight: 800;
+  color: var(--span-color);
+ }
+}
+
+ .bottom{
+  width:100%;
+ 
+  height:auto;
+  background-color: var(--down-background-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.bottom-card{
+  width:100%;
+  height: auto;
+  padding: 6rem 1rem 2rem 1rem;
+  position: relative;
+  background-color: var(--top--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 1rem;
+}
+.bottom-card p{
+  width:100%;
+  font-weight:500;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  color: var(--text-color);
+} 
+.tag{
+  width:90%;
+  max-width:374px;
+  background-color: var(--tag-color);
+ border-bottom: 8px solid var(--tag-border-bottom);
+ padding: 0.5rem;
+ position: absolute;
+ top: 2px;
+ left:0;
+
+}
+.tag p{
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: var(--text-color);
+}
+
+
+ /* Tablet */
+   @media (min-width:768px){
+  main{
+    width: 100%;
+   max-width: none;
+  }
+  .top{
+    width: 100%;
+    padding: 2rem;
+  }
+  .bottom{
+    width: 100%;
+    padding: 2rem 0rem ;
+  }
+  .bottom-card{
+    width: 100%;
+    padding: 5rem 1rem 2rem 1rem;
+    row-gap: 1.5rem;
+  }
+   
+}
+
+/* desktop */
+   @media (min-width:1280px){
+  main{
+    width: 100%;
+  }
+  .top{
+    width: 100%;
+    padding: 1rem 4rem 3rem 8rem;
+  }
+
+  .bottom{
+    width: 100%;
+    padding:8rem;
+  }
+  .bottom-card{
+    padding: 5rem 1rem 2rem 1rem;
+    row-gap: 2rem;
+  }
+  
+} 
