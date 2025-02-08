@@ -301,8 +301,7 @@ img{
 @media (max-width:710px) {
   .main-card{
     width: 100%;
-   
-  } 
+   } 
   .left-card{
     width: 55%;
   }
@@ -320,14 +319,7 @@ svg{
   font-size: 16px;
 }
 }
-@media (max-width:450px) {
-  .main-card{
-    
-    background-color: #b4182a;
-  } 
-  nav ul{
-    display: none;
-  }
-}
+
+ 
 
 
