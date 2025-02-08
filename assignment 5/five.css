@@ -15,14 +15,16 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #979797;
 } 
 .logo{
-  width: fit-content;
+  width:10%;
 }
 nav{
-   width: 40%;
+   width: 60%;
   height:auto;
+  
 }
 ul{
   list-style: none;
@@ -31,6 +33,24 @@ ul{
   align-content: center;
   column-gap: 2.5rem;
   
+}
+.side-bar{
+  position:absolute;
+  top: 0;
+  right: 0;
+  height:auto;
+  width: 100px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgb(17, 121, 191);
+  box-shadow: -10 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 10px;
+  visibility: hidden;
 }
 li a{
   text-decoration: none;
@@ -55,7 +75,7 @@ section{
   
 }
 .main-card{
-  width: 55%;
+  width: 80%;
   margin: 1rem auto;
   display: flex;
   justify-content: space-between;
@@ -84,6 +104,9 @@ section{
 form{
   width: 100%;
 }
+.number{
+  width: 100%;
+}
 .number-1 ,.number-2{
   padding: 1rem 1.5rem;
   display: flex;
@@ -110,12 +133,12 @@ form{
   font-size: 14px;
 }
 .names{
-  width:88%;
+  width:100%;
   display: flex;
   column-gap: 1rem;
 }
 .email-cont{
-  width:65%;
+  width:70%;
 }
 .credit-cont{
   width: 88%;
@@ -127,7 +150,7 @@ form{
   row-gap: 4px;
 }
 .first-name{
-  width: 100%;
+  width: 45%;
 }
 label{
   font-size: 14px;
@@ -144,7 +167,7 @@ input{
 }
 input::placeholder{
   color: #646E7A;
-  font-size: 14px;
+  font-size: 12px;
 }
 .button-container{
   width: 88%;
@@ -152,7 +175,7 @@ input::placeholder{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   row-gap: 1rem;
 }
 .button-container p{
@@ -187,10 +210,10 @@ button{
   font-weight: 600;
 }
 .right-card{
-  width: 35%;
+  width: 40%;
   height:100%;
-  background-color:#1179BF ;
-  padding: 1.5rem 2rem;
+  background-color:rgb(17, 121, 191) ;
+  padding: 1rem 2rem 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -274,6 +297,37 @@ img{
 }
 .footer a{
   text-decoration: none #31708F;
+}
+@media (max-width:710px) {
+  .main-card{
+    width: 100%;
+   
+  } 
+  .left-card{
+    width: 55%;
+  }
+  nav{
+    width:80%;
+ }
+ ul{
+   column-gap:0.8rem;
+}
+svg{
+  width: 100px;
+}
+.number li{
+  width: 100%;
+  font-size: 16px;
+}
+}
+@media (max-width:450px) {
+  .main-card{
+    
+    background-color: #b4182a;
+  } 
+  nav ul{
+    display: none;
+  }
 }
 
 

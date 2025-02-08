@@ -41,8 +41,8 @@ main{
   font-weight: 550;
 }
 .pink{
-  width: 85%;
-  height: auto;
+  width:200px;
+  height: 70px;
   padding: 1rem;
   background-color: #FE0095;
   position: absolute;
@@ -55,6 +55,40 @@ main{
 .pink p{
   text-align: center;
   color: #080808;
-  font-size:30px;
-  font-weight: 800;
+  font-size:25px;
+  font-weight:800;
+}
+
+/* for tablet */
+@media (max-width:710px) {
+  main{
+    max-width:600px ;
+    margin: 5rem 0.5rem;
+   }
+   .text-container{
+    width: 50%;
+    height: auto;
+    background-color: #fefefe;
+    padding: 3.5rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    color:#333333;
+  }
+}
+
+/* for mobile */
+@media (max-width:440px) {
+  main{
+    max-width:500px;
+    margin: 5rem 0.5rem;
+   }
+   .text-container{
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+    padding: 3.5rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    color:#333333;
+  }
 }

@@ -17,7 +17,7 @@
 }
 /* mobile  */
 main{
-  width: 100%;
+  width:100%;
   height:auto;
   background-color:var(--top--background-color) ;
   display: flex;
@@ -62,16 +62,16 @@ main{
 
  .bottom{
   width:100%;
- 
   height:auto;
   background-color: var(--down-background-color);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding:2rem 2rem 2rem 0rem;
+  
 }
 .bottom-card{
+  margin:  1rem;
   width:100%;
   height: auto;
-  padding: 6rem 1rem 2rem 1rem;
+  padding: 5rem 0.5rem 1rem 0.5rem;
   position: relative;
   background-color: var(--top--background-color);
   display: flex;
@@ -117,7 +117,7 @@ main{
   }
   .bottom{
     width: 100%;
-    padding: 2rem 0rem ;
+    padding: 6rem 3rem 6rem 1rem ;
   }
   .bottom-card{
     width: 100%;
@@ -139,10 +139,10 @@ main{
 
   .bottom{
     width: 100%;
-    padding:8rem;
+    padding:7rem;
   }
   .bottom-card{
-    padding: 5rem 1rem 2rem 1rem;
+   padding: 5rem 1rem 2rem 1rem;
     row-gap: 2rem;
   }
   

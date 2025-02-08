@@ -53,6 +53,7 @@ a:hover{
   background-color: #ff9a8b;
 }
 i{
+  font-size: 30px;
   animation: bounce 1.5s infinite;
 }
 @keyframes bounce{
@@ -62,3 +63,30 @@ i{
     transform: translateY(-15px);
   }
 }
+@media(max-width:768px){
+  .container{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  main{
+    gap: 3rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width:450px) {
+  main{
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .container{
+    flex-wrap: wrap;
+
+    gap: 24px;
+    
+    
+    
+  }
+}
+
+

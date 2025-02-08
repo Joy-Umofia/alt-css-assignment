@@ -46,7 +46,7 @@ figcaption{
   border-radius: 4px 25px 25px 4px;
 }
 .card-description{
-  height:200px;
+  height:auto;
   background-color: var(--sec-background);
   padding: 1.5rem;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
